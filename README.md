@@ -29,7 +29,7 @@ Once you are satisfied with your changes, run
 
 ## Github
 
-#### Github SSH setup
+### Github SSH setup
 - Create the directory `~/.ssh`
 - Copy and paste your PRIVATE SSH key into a file called `~/ssh/id_rsa`
 
