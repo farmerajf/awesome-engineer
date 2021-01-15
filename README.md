@@ -58,6 +58,8 @@ Install using:
 Force a Symlink to `/usr/local/bin` (because this is a keg-only install) using:
 `brew link --force libpq`
 
+<sub>Source: https://blog.timescale.com/tutorials/how-to-install-psql-on-mac-ubuntu-debian-windows</sub>
+
 #### Usage
 Connect to a Postgres instance (using the Postgres Docker image defaults) with:
 `$ psql --host=localhost --port=<host-port> --username=postgres`
