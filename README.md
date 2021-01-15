@@ -36,11 +36,29 @@ Once you are satisfied with your changes, run
 
 ## Postgres
 
-## Docker container
+### Docker container
 Create a Postgres DB in a Docker container using the following:
-`$ docker run --name <container-name> -e POSTGRES_PASSWORD=<password> -d postgres`
+`$ docker run --name <container-name> -p <host-port>:5432  -e POSTGRES_PASSWORD=<password> -d postgres`
 
 This command uses the official [Postgres Docker image](https://hub.docker.com/_/postgres). Refer to the [Docker image page](https://hub.docker.com/_/postgres) for information on how to change defaults.
-The default database name and user is `postgres`.
+The default database name and user is `postgres`. Use `psql` to connect to 
 
 <sub>Source: https://hub.docker.com/_/postgres</sub>
+
+### Postgres Client (psql)
+To connect to a Postgres instance using a CLI, a popular option is to use `psql`.
+
+#### Installing
+
+As a prerequisite ensure you have [Brew](https://brew.sh) installed.
+
+Install using:
+`$ brew install libpq`
+
+Force a Symlink to `/usr/local/bin` (because this is a keg-only install) using:
+`brew link --force libpq`
+
+#### Usage
+Connect to a Postgres instance (using the Postgres Docker image defaults) with:
+`$ psql --host=localhost --port=<host-port> --username=postgres`
+
