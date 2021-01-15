@@ -32,3 +32,15 @@ Once you are satisfied with your changes, run
 #### Github SSH setup
 - Create the directory `~/.ssh`
 - Copy and paste your PRIVATE SSH key into a file called `~/ssh/id_rsa`
+
+
+## Postgres
+
+## Docker container
+Create a Postgres DB in a Docker container using the following:
+`$ docker run --name <container-name> -e POSTGRES_PASSWORD=<password> -d postgres`
+
+This command uses the official [Postgres Docker image](https://hub.docker.com/_/postgres). Refer to the [Docker image page](https://hub.docker.com/_/postgres) for information on how to change defaults.
+The default database name and user is `postgres`.
+
+<sub>Source: https://hub.docker.com/_/postgres</sub>
