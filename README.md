@@ -24,6 +24,9 @@ Once you are satisfied with your changes, run
     git rebase --continue
 ``` 
 
+<sub>Source: https://www.git-tower.com/learn/git/faq/change-author-name-email/</sub>
+
+
 ## Github
 
 #### Github SSH setup
